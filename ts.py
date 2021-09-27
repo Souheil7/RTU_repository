@@ -26,7 +26,6 @@ TS = '''
 datab = json.loads(TS)
 data = datab.get("data")
 L = len(data)
-plt.title(datab.get("courseName"))
 for i in range(L):
     x = data[i][0]
     y = data[i][1]
