@@ -24,14 +24,13 @@ TS = '''
 '''
 
 datab = json.loads(TS)
-
 data = datab.get("data")
 L = len(data)
-
-plt.figure(datab.get("course"))
 plt.title(datab.get("courseName"))
 for i in range(L):
     x = data[i][0]
     y = data[i][1]
     plt.plot(y,x, '.b')
+
+plt.title(datab.get("courseName"))
     
