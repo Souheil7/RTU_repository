@@ -5,8 +5,6 @@ Created on Mon Sep 27 18:12:09 2021
 @author: souhe
 """
 
-
-import numpy as np
 import matplotlib.pyplot as plt
 import json
 
@@ -29,7 +27,7 @@ L = len(data)
 for i in range(L):
     x = data[i][0]
     y = data[i][1]
-    plt.plot(y,x, '.b')
+    plt.plot(y,x, 'bs')
 
-plt.title(datab.get("courseName"))
+plt.title("Software in Telecommunications")
     
